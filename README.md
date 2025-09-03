@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-17-blue.svg" alt="Java 17">
-  <img src="https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg" alt="Spring Boot 3">
+  <img src="https://img.shields.io/badge/Java-21-blue.svg" alt="Java 21">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.5.5-brightgreen.svg" alt="Spring Boot 3.5.5">
   <img src="https://img.shields.io/badge/Security-JWT-critical" alt="JWT Security">
   <img src="https://img.shields.io/badge/Database-PostgreSQL-blue.svg" alt="PostgreSQL">
 </p>
