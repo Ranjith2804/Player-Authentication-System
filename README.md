@@ -25,6 +25,13 @@ Built with a clean, layered architecture, this service is designed to be both po
 -   ✅ **Clean Architecture:** Follows the classic Controller-Service-Repository pattern.
 -   ✅ **Ready to Run:** Minimal configuration needed to get started.
 
+### Technology Stack
+
+-   **Backend:** Java 21, Spring Boot 3.5.5
+-   **Security:** Spring Security 6, JSON Web Tokens (JWT)
+-   **Database:** Spring Data JPA, Hibernate, PostgreSQL
+-   **Build & Dependencies:** Apache Maven
+
 ## API Endpoints
 
 | Method | Endpoint             | Protection | Description                                        |
@@ -33,11 +40,23 @@ Built with a clean, layered architecture, this service is designed to be both po
 | `POST` | `/api/auth/login`    | **Public** | Authenticates a user and provides a JWT.           |
 | `GET`  | `/api/data/me`       | **Secured**  | Accesses a protected resource for the current user. |
 
+### Security Flow
+
+Security is managed by a custom-configured Spring Security filter chain:
+
+1.  **Public Endpoints:** Requests to `/api/auth/**` (login/register) are permitted for all users.
+2.  **JWT Authentication:** On successful login, a signed, stateless JWT is generated and returned to the client.
+3.  **Protected Endpoints:** For all other requests, a custom `JwtAuthFilter` intercepts the request.
+    -   It validates the `Authorization: Bearer <token>` header.
+    -   It verifies the token's signature and expiration.
+    -   If valid, it populates the `SecurityContext`, authenticating the user for the duration of the request.
+
+
 ## Quick Start
 
 ### Prerequisites
 
--   JDK 17
+-   JDK 21
 -   Apache Maven
 -   PostgreSQL
 
@@ -45,8 +64,8 @@ Built with a clean, layered architecture, this service is designed to be both po
 
 1.  **Clone the repo:**
     ```sh
-    git clone https://github.com/your-username/your-repo.git
-    cd your-repo
+    git clone https://github.com/Ranjith2804/Player-Authentication-System.git
+    cd Player-Authentication-System
     ```
 2.  **Create a PostgreSQL database:**
     ```sql
