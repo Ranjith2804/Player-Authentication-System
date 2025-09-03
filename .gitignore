@@ -1,0 +1,30 @@
+# Build artifacts
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+build/
+dist/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.class
+
+# Log files
+*.log
+
+# Dependency caches
+.mvn/
+.gradle/
+
+# Other
+*~
