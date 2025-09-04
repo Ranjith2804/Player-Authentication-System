@@ -21,7 +21,7 @@ Built with a clean, layered architecture, this service is designed to be both po
 
 -   ✅ **Secure Registration:** `POST /api/auth/register` endpoint with BCrypt password hashing.
 -   ✅ **Stateless Authentication:** `POST /api/auth/login` endpoint issues signed, expiring JWTs.
--   ✅ **Robust Authorization:** A custom `JwtAuthFilter` secures endpoints by validating the `Authorization: Bearer` token.
+-   ✅ **Authorization:** A custom `JwtAuthFilter` secures endpoints by validating the `Authorization: Bearer` token.
 -   ✅ **Architecture:** Follows the classic Controller-Service-Repository pattern.
 -   ✅ **Ready to Run:** Minimal configuration needed to get started.
 
