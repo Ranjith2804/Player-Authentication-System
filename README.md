@@ -15,8 +15,6 @@
 
 This project provides a complete, production-ready template for a secure REST API using **Java**, **Spring Boot**, and **JSON Web Tokens (JWT)**. It handles the entire authentication flow, from user registration with hashed passwords to validating tokens for protected resource access.
 
-Built with a clean, layered architecture, this service is designed to be both powerful and easy to understand.
-
 ## Features
 
 -   ✅ **Secure Registration:** `POST /api/auth/register` endpoint with BCrypt password hashing.
